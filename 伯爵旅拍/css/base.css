@@ -1,0 +1,88 @@
+/*1.清除标签默认内外边距 */
+* {
+    margin: 0;
+    padding: 0;
+}
+/*2.li默认列表符号    a标签默认下划线        img标签默认边框   下边有几个像素空白缝隙的问题*/
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    /*清除默认在ie6下边框*/
+    border: 0;
+    /*清除图片底部默认缝隙*/
+    vertical-align: middle;
+}
+/*3.清除input,textarea,等默认的轮廓线*/
+input, textarea {
+    outline: 0;
+}
+input {
+    border: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+i, em {
+    font-style: normal;
+}
+/*4.设置版心，背景颜色，文字大小，超链接默认颜色, 悬停颜色,浮动，清除浮动等常用属性*/
+/*版心*/
+.w {
+    width: 1180px;
+    margin: 0 auto;
+}
+body {
+    font: 15px arial, 'microsoft yahei';
+    color: #000;
+}
+a {
+    color: #000;;
+}
+a:hover {
+    color: #000;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+.f12 {
+    font-size: 12px;
+}
+.f14 {
+    font-size: 14px;
+}
+.f16 {
+    font-size: 16px;
+}
+.f18 {
+    font-size: 18px;
+}
+.f20 {
+    font-size: 20px;
+}
+.red {
+    color: #c81623;
+}
+.tc {
+    text-align: center;
+}
+:nth-child(1) {
+    
+}

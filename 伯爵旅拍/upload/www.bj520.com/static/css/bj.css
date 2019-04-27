@@ -1,0 +1,1008 @@
+﻿html{ font-size: 62.5%; }
+body{ font-size: 1.6rem;margin:0 auto;  }
+
+
+/*2018.12.29新增滚动条样式*/
+body::-webkit-scrollbar{  
+    width: 6px;
+    height: 15px;
+}
+body::-webkit-scrollbar-thumb{  
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+.fr{ float: right; }
+.fl{ float: left; }
+.container,.container-fluid{ padding: 0px; }
+.container-fluid{ max-width: 1920px; }
+
+.navbar{ z-index: 1000; }
+/*导航栏宽度到770时就点击的，这边是重写bootstrap的*/
+@media (min-width: 770px) {
+  .navbar-expand-sm {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .navbar-expand-sm .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .navbar-expand-sm .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+  .navbar-expand-sm .navbar-nav .dropdown-menu-right {
+    right: 0;
+    left: auto;
+  }
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .navbar-expand-sm > .container,
+  .navbar-expand-sm > .container-fluid {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  .navbar-expand-sm .navbar-collapse {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+  }
+  .navbar-expand-sm .navbar-toggler {
+    display: none;
+  }
+  .navbar-expand-sm .dropup .dropdown-menu {
+    top: auto;
+    bottom: 100%;
+  }
+}
+/*end*/
+
+/*2*/
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+/*这边重写主要是为了让宽度是1180*/
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1180px;
+  }
+}
+
+.active{ background-color: #000;color: #fff!important; }
+
+/*首页最顶部样式*/
+.index_zw{ width: 100%;height: 100%; background-color: #777777;position: absolute;z-index: 1000;top: 50%;left: 50%;transform: translate(-50%,-50%);opacity:0.5;  }
+.i-all{ width: 100%;height: 100%;position: absolute;z-index: 1100;top: 50%;left: 50%;transform: translate(-50%,-50%);  }
+.i-content{ position:relative; top: 60%;left: 50%;transform: translate(-50%,-50%);opacity:1; }
+.i-logo{ display: block;margin: 0 auto 50px; }
+.i-english{ display: block;margin: 0 auto; }
+.i-mouse{ width: 64px;height: 64px;background:url(../images/mouse.png);background-size: 64px 64px;display: block;margin: 11% auto 0; }
+.i-jh{ width: 32px;height: 32px;background:url(../images/logo_jh.png);background-size: 32px 32px;display: block;margin: 0.5% auto 0; }
+.i-scroll{ margin:2% auto;text-align: center; }
+.i-scroll a{ text-decoration: none;color: #fff; }
+/*END*/
+
+/*导航栏样式*/
+.header{ width:100%;background-color: #000;height: 80px;font-family: "Arial"; }
+.header .header_cz{ padding:0px;background-color: #000000 !important; }
+.header_cz a,.header_cz ul,.header_cz li{ padding:0px !important;color:#fff!important; }
+/*.header_cz>a{ margin-right:50px;  }*/
+.header_cz>ul{ margin-right:50px;width: 100%;  }
+.header_cz ul li a{ letter-spacing: 1px;padding-right: 10px !important;padding-left: 10px !important;font-family: "Arial";font-size: 1.2rem;}
+.header_cz ul li a img{ width:24px;height: 24px; }
+@media screen and (min-width: 992px){ 
+	.header_cz>a{ margin-right:80px;  }
+}
+@media screen and (min-width: 576px) and (max-width: 770px) {
+	.header{ height: 90px; }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	.header_cz ul li a{  padding-right: 0px !important; }
+}
+@media (min-width: 1200px) {
+	.header_cz ul li a img{ position: absolute;right: 10px; }
+}
+
+/*导航栏样式end*/
+
+/*底部footer样式*/
+.ft_hr1{ margin-top: 0;margin-bottom: 0;border-top: 1px solid #d6d6d6;  }
+.footer_words{ padding-top: 3.125%; text-align: center;letter-spacing: 1px;font-family: "思源黑体";padding-left: 30px;padding-right: 30px;  }
+.footer_words>h2{ font-size: 26px;margin-bottom:3.125%; }
+.footer_words .footer_p1{ font-size:2.2rem;margin-bottom: 2.6%; }
+.footer_words .footer_city{ font-size:1.6rem;display: block;line-height: 32px;margin-bottom: 0px;}
+.footer_words .footer_tel{ font-size:1.6rem;margin-bottom:0px;line-height: 32px; }
+.footer_words .footer_phone{ font-size:1.6rem;/*margin-bottom:2.6%;*/line-height: 32px;margin-bottom: 0; }
+
+.ft_copyright_words{ text-align: center;font-size: 1.4rem;line-height: 80px;position: relative; }
+.footer-nav{ list-style: none;text-align: center;margin-bottom: 1.8%; }
+.footer-nav li{ display: initial;text-decoration: underline;font-size: 1.4rem; }
+.footer-nav li a{ color: #333333;    margin-right: 1%; }
+.footer-nav-xx{ border-top: #7f7f7f 1px dashed; overflow: hidden; height: 1px;width: 50%;margin: 2.1% auto 1.5625%; }
+.i-ft-pz{ position: absolute;right: 4.1%;bottom: 0; }
+.i-ft-pz img{width:50px}
+.i-ft-pz #cnzz_stat_icon_1274455322 img{width:20px;}
+
+/*广告轮播*/
+.ad-carousel-next{ right: 10%; }
+.ad-carousel-prev{ left: 10%; }
+/*广告轮播END*/
+
+/*城市最新客照*/
+.mid_ctphoto{ font-family: "宋体";font-size: 1.4rem;margin-bottom: 5.1%; }
+.mid_ctphoto .row{ margin-bottom: 0;margin-right: 0px;margin-left: 0px;padding-left: 0px; }
+.mid_ctphoto ul{ text-align: center;padding-left: 0;font-size: 0; }
+.mid_ctphoto ul li{ text-decoration: none;list-style-type:none;margin: 0 7px 20px;display: inline-block; }
+.mid_ctphoto ul li a{ font-size: 1.4rem;color: #000;width: 100%;height: 100%;display: inline-block;transition: background-color 1s,color 1s;text-decoration: none; }
+.mid_ctphoto  div{ width: 104px;height: 36px;border: 1px solid #000;text-align: center;line-height: 36px;letter-spacing: 2px;display: inline-block; }
+.mid_ctphoto  div a:hover{ background-color: #000;color: #fff; }
+.tag1-active{ background: #000;color: #fff!important; }
+
+.mid_ctphoto ul .tag1-active a{ color: #fff }
+
+.tag1{ cursor:pointer; }
+.tag2{ display: none; }
+/*.tag2:first-child{ display: block; }*/
+/*城市最新客照END*/
+
+/*可能已经没用的*/
+.mid_ct_info { padding:20px 20px 0px 20px;font-family: "宋体";text-align: center;letter-spacing: 1px; }
+.mid_ct_info .mid_ct_info_words{ text-align: center;margin-top: 45px;margin-bottom: 40px; }
+.mid_ct_info_words p{ font-size: 1.6rem;line-height: 2.8rem; }
+.mid_ct_info_words span{ font-size: 1.4rem;color: #8d8d8d; }
+.mid_ct_info_words a{ text-decoration: none;color: #000;font-size: 1.4rem;line-height: 2.8rem; }
+.mid_ct_info_words a:hover{ text-decoration: none; }
+.mid_ct_info_words a div{ transition:background-color 1s,color 1s; margin:30px auto 0px; width: 130px;height: 40px;border: 1px solid #000;text-align: center;line-height: 40px;letter-spacing: 2px; }
+.mid_ct_info_words a div:hover{ background-color: #000;color: #fff; }
+
+/*.doubleimg_intro video{ max-width: 1180px;width: 61.46%;position: absolute;top: 0;left: 50%;transform: translate(-50%,-0%); }*/
+
+/*新品研发* 11月24日修改，删除下面这句，换新代码/
+/* .news_spring{ margin-top: 120px;margin-bottom: 120px; } */
+.news_spring{
+  margin-top: 120px;
+  position: relative;
+}
+.news_spring_look{
+  display: inline-block;
+  width: 9%;
+  position: absolute;
+  top: -10%;
+  right: 12.5%;
+}
+.news_spring_look img{
+  width: 100%;
+}
+.guest-photo-text1{
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 4%;
+  margin-top: 11%;
+  font-family: Myriad Pro;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+.guest-photo-text2{
+  text-align: center;
+  font-size: 16px;
+  font-family: "宋体";
+  letter-spacing: 1px;
+}
+/*新品研发END*/
+
+/*首页最新客照轮播*/
+.index-newkz{ margin-top: 5%; }/*11月24日修改加入margin-top:5%*/
+.index-newkz-next{ right: -10%; }
+.index-newkz-prev{ left: -10%; }
+/*首页最新客照轮播END*/
+
+.movie_lb-next{ right: -10%; }
+.movie_lb-prev{ left: -10%; }
+
+.t-movie_lb_img{ position: relative; }
+
+/*陈漫 李东田*/
+.star-activity-img{ margin-top: 1.8%; }
+
+.brand_words{ text-align: center;margin-top: 5.83%;}
+.brand_words h1{ font-family: "Didot";font-size: 3.8rem;margin-bottom: 15px; }
+.brand_words p{ font-family: "思源黑体";font-size: 2.6rem;margin-bottom: 2.6%; }
+.brand_words hr{ margin-bottom: 25px; }
+.brand_words span{ font-family: "Arial";font-size: 1.2rem;display: block;width: 100%;transform: scale(0.64); }
+/*陈漫 李东田END*/
+
+/*百大旅拍地*/
+.global_travel{ text-align: center;margin-top:92px; }
+.global_travel h1{ font-family: "Didot";font-size: 3.8rem;margin-bottom: 15px; }
+.global_travel p{ font-family: "思源黑体";font-size: 2.6rem;margin-bottom: 50px; }
+.global_travel hr{ margin-bottom: 25px; }
+.global_travel span{ font-family: "Arial";font-size: 1.2rem;display: block;width: 100%;transform: scale(0.64); }
+
+.doubleimg_intro{ width: 100%;height: auto;margin-top:60px; }
+/*百大旅拍地END*/
+/*双影开创者*/
+
+.doubleimg_wordsfoot{ text-align: center;font-family:"Arial";margin-top:70px; }
+.doubleimg_wordsfoot p{ font-size: 2rem;font-family: "Arial"; }
+.doubleimg_wordsfoot span{ font-size: 1.2rem;display: block;width: 100%;transform: scale(0.64); }
+
+.doubleimg_wordstop{ text-align: center;margin-top: 105px; }
+.doubleimg_wordstop h1{ font-family: "Didot";font-size: 3.8rem;margin-bottom: 15px; }
+.doubleimg_wordstop p{ font-family: "思源黑体";font-size: 2.6rem;margin-bottom: 50px; }
+.doubleimg_wordstop hr{ margin-bottom: 25px; }
+.doubleimg_wordstop span{ font-family: "Arial";font-size: 1.8rem;display: block;width: 100%;/*transform: scale(0.64);*/ }
+
+
+/*最新微电影*/
+.movie_lb{ margin-top: 75px; }/*11月24日修改55改为75*/
+.movie_vd{ font-size: 0px; }
+.movie_vd_words{ letter-spacing: 1px;color: #000; font-family: "宋体";line-height: 2.8rem;margin-top: 30px;clear: both; }
+.movie_vd_words p{ display: inline-block;font-size: 1.6rem;font-family: Arial; }
+.movie_vd_words span{ font-size: 1.4rem; }
+.movie_more{ margin-top: 40px; }
+/*微电影11.24加入新代码*/
+.video-area-text{
+  text-align: center;
+  margin-top: 6.7%;
+}
+.video-area-text p{
+  font-family: "Didot";
+  font-size: 2rem;
+  margin-bottom: 2%;
+}
+.video-area-text span {
+  font-family: "Arial";
+  font-size: 1.2rem;
+  display: block;
+  width: 100%;
+  transform: scale(0.64)
+}
+.movie-swiper-item:hover{
+  text-decoration: none;
+}
+.movie-date{
+  letter-spacing: 1px;
+}
+/*微电影11.24加入新代码END*/
+
+/*百大旅拍地*/
+.baidamdd{ clear: both;padding-top: 75px;margin-bottom: 120px; }
+/*百大旅拍地END*/
+
+/*四个品牌的地方*/
+.brand-four{ padding-bottom: 40px; }
+.brand-four a{ color: #000; }
+.brand-four a:hover{ text-decoration: none; }
+.brand-four span{ font-size: 2rem;margin-top: 25px;margin-bottom: 40px;display: inline-block; }
+.brand-four-first{ float: left;width: 65.55%; }
+.brand-four-two{ float: right;width: 30.6%; }
+.brand-four-three{ float: left;width: 30.6%; }
+.brand-four-four{ float: right;width: 65.55%; }
+
+.brand_content{ margin-top: 55px;/*margin-bottom: 100px;*/ }
+.brand_content .brand_center{ position: relative;margin-bottom: 20px; }
+.brand_center_img{  overflow: hidden;    text-align: center; }
+/*.brand_center_img{ transition: all 1s ease-in-out; }
+.brand_center_img:hover{ transform: scale(1.4); }*/
+.brand_center_img img{ transition: all 2s; }
+/*.brand_center_img img:hover{ transform: scale(1.4); }*/
+
+.brand_center a{ color: #fff; }
+.brand_center_words { width: 65%; position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);text-align: center; }
+.brand_center_words p{ font-family: "[Helvetica]";font-size: 1.8rem; }
+.brand_center_words span{ font-family: "思源黑体";font-size: 2.0rem; }
+/*品牌中心END*/
+
+/*评价和新闻中心*/
+.index_eval{ font-size: 0; box-shadow: 0px 0px 10px 5px #f3f3f3;transition: all 0.3s ease 0s; }
+.index_customereval{ display: inline-block;width: 50%;padding-top: 40px;font-size:1.6rem;/*background-color: #f9f9f9;border-top: 1px solid #f9f9f9;*/  }
+/*.index_newscenter{ float: right;width: 50%;padding-top: 40px;border: 1px solid #e6e6e6;border-left: none;border-bottom: none; }*/
+.cust_eval_time{ line-height: 3.2rem; }
+.cust_eval_time .time{ margin-bottom: 10px;color: #999999;font-size: 2.0rem; }
+.cust_eval_time .title{ font-size: 1.6rem;color: #000;padding-left: 18px; }
+.cust_eval_time .tb{ float: right; }
+.cust_words{ color: #505050;clear: both; }
+.cust_words p{ margin-bottom: 25px;width: 87%;    padding-left: 13.5%; }
+.cust_words span{ float: right; }
+/*.cust_eval_one{ clear: both; }*/
+.cust_eval_one a:hover{ text-decoration: none; }
+.index_customereval_top{ padding: 0 30px 25px 40px;clear: both;font-size: 1.4rem;  }
+.index_customereval_footer{  height: 70px;width: 100%;background-color: #383838;line-height: 70px;clear: both;color: #fff;padding-left: 40px; }
+.index_customereval_footer a{ color: #fff;width: 100%;height: 100%;display: inline-block; }
+.index_customereval_footer a:hover{ text-decoration: none; }
+/*评价和新闻中心END*/
+
+
+/*新闻*/
+.bj_news_info{ padding-right:0px;padding-left:0px;margin-bottom: 120px; font-family: "思源黑体";letter-spacing: 0.5px; }
+/*.bj_news_info:hover{ box-shadow: 0px 0px 10px 5px #f3f3f3;transition: all 0.3s ease 0s;  }*/
+.bj_news_all{ /*margin-left: 10px;margin-right: 10px;*//*box-shadow: 0px 0px 10px 5px #f3f3f3;transition: all 0.3s ease 0s;*/ }
+.bj_news_info a{ color: #000; }
+.bj_news_info a:hover{ text-decoration: none;}
+.bj_news_words{ padding-right: 40px;padding-left: 40px;font-family: "思源黑体"; }
+.bj_news_info .bj_news_title{ padding-top: 30px; }
+.bj_news_info .bj_news_title p{ font-size: 2rem;margin-bottom: 30px;color: #111111; }
+.bj_news_info .bj_news_title span{ font-size: 1.6rem;color: #333333; }
+.bj_news_info .bj_news_content{ clear: both;font-family: "宋体";font-size: 1.4rem;line-height: 22px;margin-bottom: 46px; }  
+.bj_news_info .bj_news_time{ width: 100%;height: 70px;padding-right: 40px;padding-left: 40px;background-color:#2f2f2f; } 
+.bj_news_info .bj_news_time p{ font-size:2.6rem;font-family: "[Helvetica]";line-height: 70px;color: #d1d1d1;margin-bottom: 0px;display: inline-block;  }
+.bj_news_time .bj_news_jh{/* background-image: url(../images/news_jh.jpg);*/width: 32px;height: 32px;display: inline-block;margin-top: 19px; }
+
+/*返回上级*/
+.bj_news_back{ clear: both;  width: 130px;height: 40px;background-color: #000000;color: #ffffff;text-align: center;line-height: 40px;letter-spacing: 2px;margin: 6.7% auto 10.1%; }
+.bj_news_back a{ text-decoration: none;color:#ffffff;  }
+
+/*后期团队页面*/
+.late_team_video{ margin-bottom: 10.1%;font-size: 0; }
+
+/*摄影团队详情页*/
+/*.photographyteam_banner{ margin-bottom: 150px; }*/
+.photographyteam a:hover{ text-decoration: none; }
+.photographyteam_works{ width: 100%;height: auto;margin-bottom: 3.39%; }
+/*.photographyteam_works img{ max-width: 1180px; }*/
+.photographyteam_buttom{ width: 130px;text-align: center;background-color: #000;color: #fff;line-height: 40px;margin: 0px auto 10.1%; }
+.photographyteam_buttom a{ display: inline-block;width: 100%;color: #fff; }
+/*列表页*/
+.photographyteam_video{ margin-bottom: 10.1%;font-size: 0px; }
+.photographyteam_list{ margin-bottom: 9.3%;text-align: center; }
+.photographyteam_list a{ color: #000; }
+.photographyteam_list a:hover{ text-decoration:none; }
+.photographyteam_list_words{ max-width: 220px;width: 18%;height: 40px;text-align: center;line-height: 40px;font-family: "宋体";font-size: 1.4rem;border: 1px solid #000;margin-left: 10px;margin-right: 10px;margin-bottom: 10px; display: inline-block;letter-spacing: 1px; }
+.photographyteam_list_words:hover{ background-color: #000;color: #fff; }
+
+.photographyteam_people{ margin-bottom:10.1%;font-size: 0;background: #000; }
+.photographyteam_people_lt{ width: 20%;height: auto;display: inline-block;padding: 0px;}
+
+
+
+/*品牌故事*/
+.brandstory_video{ margin-bottom: 10.1%;font-size: 0px; }
+
+/*下面这些可删掉*/
+.brandstory_content{ margin-bottom: 110px; }
+.brandstory_kk { padding-left: 10px;padding-right: 10px;margin-bottom: 40px; }
+.brandstory_content_one{ width: 580px;height: 570px;background-color: #313131;padding: 35px;margin-bottom: 40px;margin: 0 auto; }
+.brandstory_content_one .brandstory_content_words{ background-color: #ebebeb;width: 100%;height: 100%; }
+.brandstory_content_words div{ vertical-align:middle;  height: 100%;text-align: center;padding-top: 155px;padding-left: 40px;
+  padding-right: 40px; }
+  .brandstory_content_words div p{ font-family: "Didot";font-size: 5rem;margin-bottom: 70px; }
+  .brandstory_content_words div span{ font-family: "宋体";font-size: 1.6rem;line-height: 2.8rem; }
+  .brandstory_content_words div hr{ width: 20px;color: #000;margin-top:60px;border-top: 1px solid #000; }
+
+  /*品牌故事第二版*/
+  .ppstory{ position: relative;padding: 0 10px;margin-bottom: 40px; }
+  .ppstory_course{ width: 80%;height: 80%;background:#ebebeb;position: absolute;left: 0px;top: 0px;margin: 10%; }
+  .ppstory_course_words{ width: 80%;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);text-align: center; }
+  .ppstory_course_words p{ text-align: center; }
+  .ppstory_course_words p{ font-family: "Didot";font-size: 5rem;margin-bottom: 70px; }
+  .ppstory_course_words span{ font-family: "宋体";font-size: 1.6rem;line-height: 2.8rem; }
+  .ppstory_course_words hr{ width: 20px;color: #000;margin-top:60px;border-top: 1px solid #000; }
+
+
+  /*铂爵门店*/
+
+
+
+  /*微电影列表页*/
+  .movie_list_main{ margin: 0% auto 5.1%;position: relative;font-size: 0px; }
+  .movie_list_main_words{ text-align: center;font-size: 1.6rem; }
+  .movie_list_main_words p{ font-size: 3.5rem;margin-bottom: 1%; }
+  .movie_list_main_words span{ font-size: 2rem; }
+  /*.movie_list_main video{ margin-top: 4.7%; }*/
+  .movie_list_bgicon{ /*display: none;*/ position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%); width: 64px;height: 64px;background-image: url(../images/movie_anniu.png);background-size: 64px 64px; }
+  /*.movie_list:hover .movie_list_bgicon{ display: inline-block; }*/
+  .movie_start{ width: 64px;height: 64px; position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);background: url(../images/play.png);background-size: 64px 64px; }
+  .movie_list_title{ font-family: "宋体";font-size: 2.6rem;color: #ffffff;  }
+  .movie_bag{ background-color: #000000;padding-top:2.6%;padding-bottom: 140px; }
+  .movie_all{ margin-right: 0;margin-left: 0; }
+  .movie_list{ margin-top: 18px;position: relative;overflow: hidden;padding-right: 10px;padding-left: 10px; }
+
+  .movie_list:hover .movie_list_words{ bottom: 0px; } 
+
+  .movie_list_words{  font-family: "宋体";font-size: 14px;background-color: #1b1b1b;height: 50px;line-height: 50px; color: #ffffff; }
+  .movie_list_words{ opacity: 0.6;width: 96.7%;display: block;margin: 0 auto;
+    bottom: -50px;
+    height: 50px;
+    transition:bottom 0.5s;
+    position: absolute;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    .movie_list_words p{ float: left;margin-left:30px;margin-bottom: 0px; }
+    .movie_list_words span{ float: right;margin-right: 22px; }
+    /*返回上级*/
+    .movie_back_a:hover{ text-decoration: none; }
+    .movie_back{ width: 130px;height: 40px;background-color: #000000;color: #ffffff;text-align: center;line-height: 40px;letter-spacing: 2px;margin: 130px auto 130px; }
+
+
+    /*新闻列表页*/
+  .news_list{ /*margin-top: 130px;*/ }
+  .news_list .row{ margin-bottom: 5.9%;margin: 0 }
+  .news_list_info{ margin-bottom: 50px;box-shadow: 0px 0px 10px 5px #f3f3f3;transition: all 0.3s ease 0s; }
+  /*新闻详情页*/
+  .news_list_show{ width: 100%;margin: 0 auto;margin-top:130px;margin-bottom: 100px; }
+  .news_m_title{ margin-bottom: 51px; }
+  .news_m_title p{ font-size: 25px;text-align: center;color: #505050;padding-top: 56px;padding-bottom: 10px;margin: 0; }
+  .news_m_title span{ color: #999999;font-family: "宋体";font-size: 12px;display: block;text-align: center; }
+  .news_m_content{  }
+  .news_content img{ max-width: 100%!important;height: auto!important; }
+  .news_content_title{ padding-top: 30px; }
+  .news_content_title p{ font-size: 2rem;margin-bottom: 30px;color: #111111; }
+  .news_content_title span{ font-size: 1.6rem;color: #333333; }
+  /*新的新闻详情页*/
+  .t-news-show-c{ width: 100%;float: left;margin-bottom: 10%; }
+  .t-news-show-tj{ float: right; }
+  .t-news-breadcrumbs{ margin-top: 10%;margin-bottom: 3.55%; }
+  .t-news-breadcrumbs a{ color: #000; }
+  .t-news-breadcrumbs a:hover{ /*color: red;*/text-decoration: none; }
+  .t-news-show-tj-list p{     margin-top: 7.5%;margin-bottom: 10%; }
+  .t-news-show-tj-list a{ color: #000;text-decoration: none; }
+
+  .t-gsjj-show-c{ width: 100%;float: left;margin-bottom: 10%; }
+  .t-gsjj-show-tj{ float: right; }
+  .t-gsjj-main{ font-size: 0; }
+  .t-gsjj-main video{ margin-bottom: 60px; }
+  .t-gsjj-main img{ margin-bottom: 40px; }
+  .t-gsjj-main span{ font-size: 1.4rem;letter-spacing: 2px;margin-bottom: 60px;display: inline-block;line-height: 28px; }
+  .t-gsjj-main p{ font-size: 1.6rem;letter-spacing: 1px;margin-bottom: 15px;font-weight: 600; }
+  .t-gsjj-show-tj-list a{ color: #000;text-decoration: none; }
+  .t-gsjj-show-tj-list p{     margin-top: 7.5%;margin-bottom: 10%; }
+
+
+
+  /*城市图片的切换*/
+  .index-city-photo{ margin-top: 120px; }
+  .index-city-photo-cityname div{ width: 130px;height: 40px;border: 1px solid #000;text-align: center;line-height: 40px;letter-spacing:2px;display: inline-block;margin: 0 6px 20px; }
+  .index-city-photo-cityname a{ text-decoration: none;color: #000; }
+
+  /*.index-city-photo-xq .row{ margin:0;  }*/
+  .index-city-photo-xq-content{ display: inline-block;border: 1px solid #e6e6e6;border-left: none;padding: 20px; }
+  .index-city-photo-xq-content a{ text-decoration: none;color: #000; }
+  .index-city-photo-xq-content .city-content{ font-family: "宋体";margin: 50px auto 20px;text-align: center; }
+  .city-content span{ font-size: 16px;color: #8d8d8d; }
+  .city-content p .span1{ font-size: 22px;line-height: 2.8rem;font-family: "Didot";color: #000; }
+  .city-content p .span2{ font-size: 20px;line-height: 2.8rem;font-family: "宋体";color: #000; }
+  .city-content div{ font-size: 1.5rem;transition:background-color 1s,color 1s;width: 130px;height: 40px;border: 1px solid #000;text-align: center;line-height: 40px;letter-spacing:2px;margin: 30px auto 0px; }
+  .city-content div:hover{ background-color: #000;color: #fff; }
+  .city-content a{ text-decoration: none;color: #000; }
+  /*END*/
+
+  /*城市轮播照片*/
+  #cityshowimg{}
+  #cityphoto_scroll{ margin-top: 120px;position: relative; }
+  #cityphoto_left{width:50%;/*height:1080px;*/overflow:hidden;float: left;}
+  #cityphoto_left ul{ padding: 0; }
+  #cityphoto_left ul li{float:left;/*height:1080px;*/list-style: none;}
+  #cityphoto_left ul li img{display:block;}
+  #cityphoto_right{width:50%;/*height:1080px;*/overflow:hidden;float: left; margin-bottom: 160px;}
+  #cityphoto_right ul{ padding: 0; }
+  #cityphoto_right ul li{float:left;/*height:540px;*/list-style: none;}
+  #cityphoto_right ul li img{display:block;}
+  .cityphoto_back{ width: 130px;height: 40px;background-color:#000;clear: both;text-align: center;line-height: 40px;display: inline-block;position: absolute;top: 30%;left: 50%;transform: translate(-50%,-200%);margin-top: 50%; }
+  .cityphoto_back a{ color: #fff; }
+  .cityphoto_hidden_btn{ display: none; }
+
+  /*新的城市门店样式*/
+  /*列表页*/
+  .t_store_list{ margin-bottom: 4.6875%;font-size: 0; }
+  .t_store_list hr{ border-color: #000;margin:2.11% auto; }
+  .t_store_list_city { margin-top: 9%; }
+  .t_store_list_city_o{ margin-bottom: 3.38%; }
+  .breadcrumbs{ font-size: 1.4rem;font-family: "宋体"; }
+  .breadcrumbs a{ color: #000; }
+  .breadcrumbs a:hover{ /*color: red;*/text-decoration: none; }
+  .t-breadcrumbs{ margin:10.1% auto 3%; }
+
+  /*详情页*/
+  .t_store_show{ margin-top: 6.20%;margin-bottom: 4.6875%;font-size: 0; }
+  .t_store_show_video{ margin:2.11% auto 0;font-size: 0; }
+  .t_store_show_city { margin-top: 9%; }
+  .t_store_show_city_o{ margin-bottom: 3.38%; }
+  .t_store_show_words{ text-align: center;/*display: inline-block;*/font-family: "宋体"; }
+  .t_store_show_words h1{ font-size: 4rem;font-family: "思源黑体";font-weight: 100;margin-bottom: 2.54%;margin-top: 12.7%;  }
+  .t_store_show_e{ margin-bottom: 5.08%; }
+.t_store_show_words p{ font-family: "Arial";font-size: 1.2rem;display: block;width: 100%;transform: scale(0.64);margin-bottom: 0px;/*line-height: 12px;*/ }
+.t_store_show_words span{ font-size: 1.6rem;line-height: 2.8rem; }
+/*新的城市门店样式END*/
+
+/*新版城市客照详情页*/
+.t-city-img{ margin-bottom: 3.39%; }
+.t-city-breadcrumbs{ margin:10.1% auto 3%; }
+.return_btn{
+    width: 130px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    line-height: 40px;
+    margin: 0px auto 10.1%;
+}
+.return_btn a{
+	display: inline-block;
+    width: 100%;
+    color: #fff;
+}
+.return_btn_movie{
+	width: 50%;
+    text-align: center;
+    background-color: #FFF;
+    color: #000;
+    line-height: 40px;
+    margin: 50px auto 10.1%;
+}
+.return_btn_movie a{
+	display: inline-block;
+    width: 100%;
+    color: #000;
+	letter-spacing:5px;
+	text-indent:5px;
+}
+/*新版城市客照详情页END*/
+
+
+
+
+
+
+/*铂爵品牌风格*/
+.bj_brandstyle{ margin-top: 180px;margin-bottom: 135px; }
+.bj_brandstyle .row{ margin: 0px; }
+/*一行分为左边和右边*/
+.bj_brandstyle_left{ padding: 0 20px 0 0; }
+.bj_brandstyle_right{ padding:0 0 0 20px; }
+.bj_brandstyle_word{ height: 180px;font-size: 3rem;padding-top: 98px;letter-spacing: 1px; }
+.bj_brandstyle_word_right{ text-align: right; }
+.brandstyle_span1{ font-family: "Didot"; }
+.brandstyle_span2{ font-family: "思源黑体"; }
+.bj_brandstyle_img img{ margin-bottom: 45px; }
+
+
+/*十八大高端旅拍定制*/
+
+/*.highendcustomization{ margin-top: 150px; }*/
+.highendcustomization .row{ margin: 0px; }
+.highend{ padding: 0px !important;margin: 0 auto; }
+.highend_img{ width:180px;height: 180px;margin: 0 auto; box-shadow: 0px 0px 10px 5px #f3f3f3;border-radius:13%; 
+  display:flex;justify-content: center;align-items: center; }
+  .highend_words{ margin: 0 auto;width:184px;height: 108px; line-height:108px;font-size:18px;  text-align: center;font-family: "思源黑体"; }
+
+  .highend_describe{ margin-top: -30px;margin-bottom: 10.1%; }
+  .highend_describe img{ width: 1180px; }
+
+
+  .t-photo-week-l{ width: 100%;/*float: left;*//*margin-bottom: 10%;*/padding:0;display: inline-block; }
+  .t-photo-week-r{ float: right;padding:0;display: inline-block; }
+  .t-photo-week-tj{ text-align: center;border: 1px solid #000;line-height:50px;margin-bottom: 10%; }
+  .t-photo-week-r a{ text-decoration: none;color: #000; }
+  .t-photo-week-r a:hover{ text-decoration: none; }
+
+  /*vr*/
+  .vr-bg{ background-color: #343434;padding-bottom: 4.6875%; }
+  .vr-all{ padding-top: 7.2%;    padding-bottom:7.6%;font-family: "宋体";font-size: 1.4rem; }
+  .vr-all ul{ list-style: none;text-align: center;padding: 0;margin: 0; }
+  .vr-all ul li{ float: left; display: inline-block;width: 120px;border: 1px solid #fff;height: 40px;line-height: 40px;
+    margin-right:12.5px;margin-bottom: 15px; }
+    .vr-all ul li a{ color: #fff;width: 100%;height: 100%;display: inline-block;text-decoration: none;text-indent: 20px;letter-spacing: 20px; }
+    .vr-all ul li:hover a{ background-color: #000; }
+    .vr-all ul li:hover{ border: none; }
+    .vr-acitve{ border: none!important; }
+    .vr-acitve a{ background-color: #000; }
+
+    .VR-main{ /*margin-top: 3.4%;*/margin-bottom: 4.6%; }
+    .vr-words{ color: #fff;letter-spacing: 1px;font-size: 1.4rem;font-family: "宋体";line-height: 28px; }
+
+    @media  screen and (max-width:1024px){
+      /*首页*/
+      /*新品发布*/
+      .news_spring{ margin-top: 5%;margin-bottom: 5%; }
+
+      /*首页最新客照轮播*/
+    .index-newkz{ /*margin-bottom: 120px;*/ }
+    .index-newkz-next{ right: 0%; }
+    .index-newkz-prev{ left: 0%; }
+    /*首页最新客照轮播END*/
+
+    .movie_lb-next{ right: 0%; }
+    .movie_lb-prev{ left: 0%; }
+
+    /*陈漫 李东田*/
+    .star-activity-img{ margin-top: 26px; }
+
+    /*.brand_words{ text-align: center;margin-top: 84px; }*/
+    .brand_words h1{ font-size: 2.8rem;margin-bottom: 12px; }
+    .brand_words p{ font-size: 2rem; }
+    .brand_words span{ font-size: 1.1rem;transform: scale(0.48); }
+    /*陈漫 李东田END*/
+
+    /*百大旅拍地*/
+    .global_travel{ margin-top:50px; }
+    .global_travel h1{ font-size: 2.8rem;margin-bottom: 8px; }
+    .global_travel p{ font-size: 2rem;margin-bottom: 27px; }
+    .global_travel span{ font-size: 1.1rem;transform: scale(0.48); }
+
+    .doubleimg_intro{ max-width: 800px;margin: 0 auto;margin-top:32px; }
+    /*百大旅拍地END*/
+
+    /*最新微电影上面的*/
+    .doubleimg_wordstop{ margin-top: 56px; }
+    .doubleimg_wordstop h1{ font-size: 2.8rem;margin-bottom: 15px; }
+    .doubleimg_wordstop p{ font-size: 2rem;margin-bottom:27px; }
+    .doubleimg_wordstop span{ font-size: 1.1rem; }
+    /*最新微电影*/
+    .movie_lb{ margin-top: 30px; }
+    .movie_lb_single{ padding-right:5.3px;padding-left: 0px; }
+    .movie_lb_double{ padding-left: 5.3px;padding-right:0px; }
+    .movie_vd_words{ line-height: 2.8rem;margin-top: 16px; }
+    .movie_vd_words span{ font-size: 1.4rem; }
+    .movie_more{ margin-top: 21px; }
+    /*END*/
+    /*四个品牌的地方*/
+    .brand-four span{ font-size: 1.8rem;margin-top: 13.5px;margin-bottom: 21.5px; }
+  .brand_content{ margin-top: 30px;/*margin-bottom: 53.3px;*/ }
+  /*四个品牌的地方END*/
+  /*百大旅拍地*/
+  .baidamdd{ padding-top: 40px;margin-bottom:64px; }
+  /*百大旅拍地END*/
+
+
+
+
+  /*品牌中心*/
+
+  /*.brand_content{ margin-top: 80px;margin-bottom: 100px; }*/
+  .brand_content .brand_center{ position: relative;margin-bottom: 20px; }
+  .brand_center_img{  overflow: hidden; }
+/*.brand_center_img{ transition: all 1s ease-in-out; }
+.brand_center_img:hover{ transform: scale(1.4); }*/
+.brand_center_img img{ transition: all 1s; }
+.brand_center_img img:hover{ transform: scale(1.4); }
+.brand_center a{ color: #fff; }
+.brand_center_words { width: 65%; position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);text-align: center; }
+.brand_center_words p{ font-family: "[Helvetica]";font-size: 1.8rem; }
+.brand_center_words span{ font-family: "思源黑体";font-size: 2.0rem; }
+/*品牌中心END*/
+
+/*1.*/
+/*摄影团队详情页*/
+/*.photographyteam_banner{ margin-bottom: 5%; }*/
+/*.photographyteam_works{ margin-bottom: 5%; }*/
+/*.photographyteam_buttom{ margin: 0 auto 5%; }*/
+/*列表页*/
+/*.photographyteam_video{ margin-bottom: 5%; }*/
+/*.photographyteam_list{ margin-bottom: 5%; }*/
+.photographyteam_list_words{ width: 40%; }
+/*.photographyteam_people*/{ margin-bottom: 5%; }
+.photographyteam_people_lt{ width: 25%;padding: 1px; }
+/*摄影团队END*/
+/*2.*/
+/*铂爵门店*/
+
+/*铂爵门店end*/
+/*3.*/
+/*铂爵品牌风格*/
+.bj_brandstyle{ margin-top: 10%;margin-bottom: 10%; }
+.bj_brandstyle .row{ margin: 0px; }
+/*一行分为左边和右边*/
+.bj_brandstyle_left{ padding: 0 20px 0 20px; }
+.bj_brandstyle_right{ padding:0 20px 0 20px; }
+.bj_brandstyle_word{ height:auto;font-size: 2.4rem;padding-top: 20px; }
+.bj_brandstyle_img img{ margin-bottom: 25px; }
+/*铂爵品牌风格END*/
+/*4.*/
+/*品牌故事*/
+/*.brandstory_video{ margin-top: 5%;margin-bottom: 5%; }*/
+.ppstory{ margin-bottom: 5%; }
+.ppstory_course_words p{ font-size: 2.5rem;margin-bottom: 5%; }
+.ppstory_course_words span{  }
+.ppstory_course_words hr{ margin-top:20%; }
+/*品牌故事END*/
+/*5.*/
+/*十八大高端旅拍定制*/
+
+/*.highendcustomization{ margin-top: 5%; }*/
+/*.highend_describe{ margin-top: 5%;margin-bottom: 5%; }*/
+/*十八大高端旅拍定制END*/
+/*6.*/
+
+
+}
+
+.swiper-button-next, .swiper-button-prev { outline: none; }
+
+@media  screen and (max-width:768px){
+	/*swiper轮播的左右按键*/
+	.swiper-button-next, .swiper-button-prev {
+		width: 20px;
+		height: 30px;
+		background-size: 20px 30px;
+	}
+
+	.index-city-photo-xq-content{ padding: 10px; }
+	.index-city-photo-xq-content .city-content{ margin: 25px auto 10px; }
+	.city-content span{ font-size: 14px;color: #8d8d8d; }
+	.city-content p .span1{ font-size: 18px;line-height: 2.8rem; }
+	.city-content p .span2{ font-size: 16px;line-height: 2.8rem; }
+	.city-content div{ font-size: 13px;width: 100px;height:30px;line-height: 30px;margin: 15px auto 0px; }
+	/*END*/
+
+	/*城市最新客照*/
+
+	/*城市最新客照END*/
+
+  /*百大旅拍地*/
+  .baidamdd{ padding-top:30px;margin-bottom:48px; }
+  /*百大旅拍地END*/
+
+
+  /*摄影团队的列表*/
+  .photographyteam_people_lt{ width: 33.3%; }
+  /*摄影团队END*/
+
+  /*铂爵门店*/
+
+  /*铂爵门店END*/
+  /*品牌故事*/
+  .ppstory_course_words span { font-size: 1.2rem;line-height: 1.2rem; }
+  /*品牌故事 END*/
+
+  /*陈漫李东田*/
+  .star-activity-img{ margin-top: 0; }
+  .brand_words span{ display: none; }
+
+  /*评价和新闻中心*/
+  .index_customereval{ width: 100%;padding-top: 40px;font-size:1.6rem;}
+  .cust_eval_time .tb{ float: right; }
+
+  .cust_words p{ margin-bottom: 15px;width: 87%;    padding-left: 0; }
+  .index_customereval_top{ padding: 0 30px 25px 40px;clear: both;font-size: 1.4rem;  }
+  .index_customereval_footer{  height: 50px;line-height: 50px; }
+  /*评价和新闻中心END*/
+}
+
+  @media  screen and (max-width:600px){
+    /*首页最新客照轮播*/
+    .index-newkz-next{ right: 0%;display: none; }
+    .index-newkz-prev{ left: 0%;display: none; }
+    /*首页最新客照轮播END*/
+
+    .movie_lb-next{ right: 0%;display: none; }
+    .movie_lb-prev{ left: 0%;display: none; }
+
+    /*百大旅拍地*/
+    .baidamdd{ padding-top:30px;margin-bottom:48px; }
+    /*百大旅拍地END*/
+    /*评价和新闻中心*/
+    .index_customereval{ padding-top: 20px;}
+    .cust_eval_time .time{ margin-bottom: 10px;color: #999999;font-size: 2.0rem; }
+    .cust_eval_time .title{ font-size: 1.6rem;color: #000;padding-left: 18px; }
+    .cust_eval_time .tb{ display: none; }
+    .cust_words{ display: none; }
+    .index_customereval_top{ padding: 0 30px 25px 40px;clear: both;font-size: 1.4rem;  }
+    .index_customereval_footer{  height: 50px;line-height:50px;clear: both; }
+
+    /*评价和新闻中心END*/
+
+  }
+  @media  screen and (max-width:480px){
+   /*百大旅拍地*/
+   .baidamdd{ padding-top:18.75px;margin-bottom:30px; }
+   /*百大旅拍地END*/
+
+   .brand_words h1{ font-size: 1.8rem; }
+   .brand_words p{ font-size: 1.6rem; }
+
+   .footer_words>h2{ font-size: 20px; }
+   .footer_words .footer_city{ font-size:1rem;line-height: 20px;}
+   .footer_words .footer_tel{ font-size:1rem;line-height: 20px; }
+   .footer_words .footer_phone{ font-size:1rem;line-height: 20px; }
+
+   /*评价和新闻中心*/
+   .cust_eval_time .time{ margin-bottom: 10px;color: #999999;font-size: 2.0rem; }
+   .cust_eval_time .title{ padding-left: 0;display: block; }
+
+   /*评价和新闻中心END*/
+
+ }
+ @media  screen and (max-width:414px){
+
+   /*首页城市客照*/
+   .index-city-photo-xq-content{ padding: 8px; }
+   .index-city-photo-xq-content .city-content{ margin: 10px auto 8px; }
+   .city-content span{ font-size: 10px;color: #8d8d8d; }
+   .city-content p{ margin-bottom: 0px; }
+   .city-content p .span1{ font-size: 13px;line-height: 2.8rem; }
+   .city-content p .span2{ font-size: 12px;line-height: 2.8rem; }
+   .city-content div{ font-size: 10px;width: 80px;height: 30px;line-height: 30px;margin: 10px auto 0px; }
+   /*END*/
+   /*百大旅拍地*/
+   .baidamdd{ padding-top:16px;margin-bottom:26px; }
+   /*百大旅拍地END*/
+
+
+
+   /*摄影团队的列表*/
+   .photographyteam_people_lt{ width: 50%; }
+   /*摄影团队END*/
+
+   /*十八大高端旅拍定制*/
+   .highend_img{ width:160px;height: 160px; }
+   .highend_words{ width:160px;height: 80px; line-height:80px;font-size:16px; }
+   /*十八大高端旅拍定制END*/
+
+   .cust_eval_time .title{ font-size: 1.3rem; }
+ }
+ @media  screen and (max-width:375px){
+  /*首页城市客照*/
+  .index-city-photo-xq-content{ padding: 3px; }
+  .index-city-photo-xq-content .city-content{ margin: 8px auto 4px; }
+  .city-content span{ font-size: 10px;color: #8d8d8d; }
+  .city-content p{ margin-bottom: 0px; }
+  .city-content p .span1{ font-size: 13px;line-height: 1.3rem; }
+  .city-content p .span2{ font-size: 12px;line-height:1.3rem; }
+  .city-content div{ font-size: 10px;width: 70px;height: 25px;line-height: 25px;margin: 5px auto 0px; }
+  /*END*/
+
+  /*百大旅拍地*/
+  .baidamdd{ padding-top:15px;margin-bottom:23.5px; }
+  /*百大旅拍地END*/
+
+
+}
+@media  screen and (max-width:360px){
+  /*十八大高端旅拍定制*/
+  .highend_img{ width:140px;height: 140px; }
+  .highend_words{ width:150px;height: 80px; line-height:80px;font-size:14px; }
+  /*十八大高端旅拍定制END*/
+}
+@media  screen and (max-width:320px){
+  /*十八大高端旅拍定制*/
+  .highend_img{ width:120px;height: 120px; }
+  .highend_words{ width:130px;height: 56px; line-height:56px;font-size:12px; }
+  /*十八大高端旅拍定制END*/
+}
+
+
+#bmModal .modal-content{
+  width:650px;
+  height:550px;
+  padding: 0px;
+  border-radius: 5%;
+}
+#bmModal .modal-body{
+  padding: 0px;
+}
+
+#bmModal .step-1{
+  width:650px;
+  height:550px;
+  background-repeat:no-repeat;
+  border-radius:10px;
+  background-color: #fff;
+}
+#bmModal .step-1 a{
+  position:absolute;
+  bottom:45px;
+  left:93px;
+  width:425px;
+  height:70px;
+}
+#bmModal .step-2{
+  display:none;
+  width:650px;
+  height:550px;
+  background-repeat:no-repeat;
+  border-radius:10px;
+}
+#bmModal .step-2 form{
+  position:absolute;
+  margin:auto;
+  top:207px;
+  left:0;
+  right:0;
+  width:445px;
+}
+#bmModal .step-2 form input{ 
+ background-color:transparent;border:0;
+ height: 45px;
+ line-height: 45px;
+ color: #000;
+ text-align: center;
+ letter-spacing: 2px;
+ outline: none;
+ font-size: inherit;
+}
+#bmModal .step-2 form input::-ms-input-placeholder{color: #000;}
+#bmModal .step-2 form input::-webkit-input-placeholder{color: #000;}
+
+#bmModal .guanbi{
+   margin: 20px;
+   margin-top: 23px;
+   width: 25px;
+   height: 25px;
+}
+#bmModal .step-2 form button {
+  background-color: transparent;
+  border: 0;
+  height: 45px;
+  line-height: 45px;
+  width: 445px;
+  margin-top: 18px;
+  cursor: pointer;
+}
+#bmModal .modal-dialog{
+        width: 650px;
+    height: 550px;
+    padding: 0px;
+    border-radius: 5%;
+}
+.refloat{    position: absolute;right: 0px;
+    top: 100px;z-index: 10000;}
+@media (min-width: 768px){
+.modal-dialog {
+    width: 910px;
+    margin: 160px auto;
+}
+}
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 910px;
+
+}
+
+}
+.more_m_title p{font-size: 25px;text-align: center;color: #505050;padding-top: 56px;padding-bottom: 10px;
+margin: 0;}
+#pages {
+    height: 30px;
+    text-align: center;
+    margin: 20px auto 30px;
+    line-height: 30px;
+}
+#pages a, #pages span {
+    display: inline-block;
+    height: 30px;
+    padding: 0 13px;
+    cursor: pointer;
+    margin: 0px 6px;
+    color: #696969;
+}
+
+#pages a:hover, #pages span {
+    color: #fff;
+    background-color: #2f2f2f;
+}
+.t-page{ margin-top: 20px;padding-bottom: 20px; }
+.t-page span{     display: inline-block;margin-top: 5px;margin-bottom: 5px; }
+.t-page a{ color: #000; }
+
+
+.dropdown-menu{ background-color: #000!important; }
+.dropdown-item{     line-height: 25px; }
+.dropdown-menu a:hover{ background-color: #000; }

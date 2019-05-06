@@ -1,0 +1,131 @@
+.header {
+  background-color: #000;
+  width: 100%;
+  height: 79px;
+  line-height: 79px;
+}
+.header .nav {
+  padding-left: 190px;
+}
+.header .nav li {
+  float: left;
+  padding-right: 23px;
+  height: 79px;
+}
+.header .nav li a {
+  color: #ffffff;
+  font-size: 12px;
+  position: relative;
+}
+.header .nav li a .arrows-down {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+  right: -10px;
+  top: 6px;
+}
+.big-pic img {
+  width: 100%;
+}
+.tbody {
+  padding: 22px;
+}
+.tbody .position {
+  font-size: 14px;
+  color: #999;
+}
+.tbody .position a {
+  font-size: 14px;
+  color: #999;
+}
+.tbody .pic {
+  margin-top: 39px;
+}
+.tbody .pic li {
+  background-color: #fff;
+  width: 32.5%;
+  float: left;
+  margin-left: 3px;
+  padding: 2px;
+  margin-bottom: 15px;
+  transition: all 1s;
+}
+.tbody .pic li .top img {
+  width: 100%;
+}
+.tbody .pic li .bottom {
+  position: relative;
+}
+.tbody .pic li .bottom span {
+  font-size: 16px;
+  color: #999;
+  margin: 25px 25px;
+}
+.tbody .pic li .bottom span:nth-child(2) {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  right: 6px;
+}
+.tbody .pic li:hover {
+  box-shadow: 0px 0px 10px 8px #c2c2c2;
+}
+hr {
+  margin-top: 119px;
+  margin-bottom: 48px;
+  color: #d6d6d6;
+}
+.footer {
+  text-align: center;
+}
+.footer .bottom {
+  margin-top: 50px;
+  position: relative;
+}
+.footer .bottom h2 {
+  font-size: 28px;
+  margin-bottom: 43px;
+}
+.footer .bottom span {
+  line-height: 30px;
+  font-size: 16px;
+}
+.footer .bottom p {
+  font-size: 16px;
+  margin: 9px 0;
+}
+.footer .bottom .ft {
+  margin-top: 30px;
+  margin-left: 25%;
+  width: 675px;
+  height: 69px;
+  line-height: 69px;
+  border-top: 1px dashed #000;
+}
+.footer .bottom .ft a {
+  font-size: 14px;
+  margin: 0 3px;
+  border-bottom: 1px solid #000;
+}
+.footer .bottom .xiaotu {
+  position: absolute;
+  right: 20px;
+  bottom: 28px;
+}
+.footer .bottom .xiaotu img {
+  height: 20px;
+}
+.end {
+  text-align: center;
+}
+.end img {
+  width: 100%;
+  height: 62px;
+}
